@@ -43,7 +43,6 @@ class DoublyLinkedList:
         self.tail = None
 
     def setHead(self, node):
-        # Write your code here.
         if self.head is None:
             self.head = node
             self.tail = node
@@ -51,14 +50,12 @@ class DoublyLinkedList:
         self.insertBefore(self.head, node)
 
     def setTail(self, node):
-        # Write your code here.
         if self.tail is None:
             self.setHead(node)
             return
         self.insertAfter(self.tail, node)
 
     def insertBefore(self, node, nodeToInsert):
-        # Write your code here.
         if nodeToInsert == self.head and nodeToInsert == self.tail:
             return
         self.remove(nodeToInsert)
@@ -72,7 +69,6 @@ class DoublyLinkedList:
 
 
 def insertAfter(self, node, nodeToInsert):
-    # Write your code here.
     if nodeToInsert == self.head and nodeToInsert == self.tail:
         return
     self.remove(nodeToInsert)
@@ -86,7 +82,6 @@ def insertAfter(self, node, nodeToInsert):
 
 
 def insertAtPosition(self, position, nodeToInsert):
-    # Write your code here.
     if position == 1:
         self.setHead(nodeToInsert)
         return
@@ -102,7 +97,6 @@ def insertAtPosition(self, position, nodeToInsert):
 
 
 def removeNodesWithValue(self, value):
-    # Write your code here.
     node = self.head
     while node is not None:
         nodeToRemove = node
@@ -112,16 +106,14 @@ def removeNodesWithValue(self, value):
 
 
 def remove(self, node):
-    # Write your code here.
-    if (node == self.head):
+    if node == self.head:
         self.head = self.head.next
-    if (node == self.tail):
+    if node == self.tail:
         self.tail = self.tail.prev
     self.removeNodeBindings(node)
 
 
 def containsNodeWithValue(self, value):
-    # Write your code here.
     node = self.head
     while node is not None and node.value != value:
         node = node.next
