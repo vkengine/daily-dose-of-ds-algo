@@ -9,6 +9,7 @@ Sample Output
 [1, 4, 9, 25, 36, 64, 81]
 """
 
+# O(n) time | O(n) space
 def sortedSquaredArray(array):
     # Write your code here.
 

@@ -33,7 +33,7 @@ Sample Output
 // Python -  6 points
 """
 
-
+# O(n) time | O(n) space
 def tournamentWinner(competitions, results):
     # Write your code here.
     current_best_team = None
